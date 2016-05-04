@@ -12,3 +12,15 @@ li a {
     float: left;
     width: 60px;
 }
+.logo{
+    float: right;
+    width: 300px;
+}
+.footer{
+    text-align: center;
+    height: 100px;
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+}
