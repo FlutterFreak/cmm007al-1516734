@@ -30,5 +30,6 @@ article{
     width: 33%;
 }
 footer{
+    margin-bottom: auto;
     border-bottom: solid;
 }
