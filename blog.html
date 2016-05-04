@@ -16,9 +16,9 @@ and open the template in the editor.
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <title>BugTracker</title>
 </head>
-<body>
+<>
 
-<div class="container border">
+< class="container border">
 
     <header>
 
@@ -40,7 +40,7 @@ and open the template in the editor.
 
 
     </header>
-
+<main>
     <div class="row">
         <div class="col-md-12 min-height">
 
@@ -70,6 +70,27 @@ and open the template in the editor.
             </div>
         </div>
 </div>
+    <div class = "row margin-top">
+        <div class="col-md-6">
+            <input value="<?php echo $blogview['entryTitle'] by $blogview['submitter']  ; ?>" class="form-control">
+        </div>
+
     </div>
+
+    <div class = "row margin-top">
+        <div class="col-md-6">
+            <input value="<?php echo $blogview['Category']; ?>" class="form-control">
+        </div>
+
+    </div>
+
+    <div class = "row margin-top">
+        <div class="col-md-9">
+            <textarea class="form-control"> <?php echo $blogview['entrySummary']; ?> </textarea>
+        </div>
+
+    </div>
+
+</main>
 </body>
 </html>
