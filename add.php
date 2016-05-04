@@ -122,19 +122,25 @@ if(isset($_POST['save_blog']))
 
     $sql = "insert into bug (entryTitle,Category,entrySummary,submitter)values('$title','$category','$summary',' $submitter')";
 
-    $con->query($sql);
-    $con->close();
+    if(mysqli_query($db,$sql)){
+    }  else{
+        echo "Error:" . $sql . "<br>" . mysqli_error($db);
+    }
     $message = "<h3>Data saved successfully</h3>";
 
-}//end if statement
-
-
-
-// execute if requested using HTTP POST Method
+}
 }
 else {
 // this is impossible
 }
 ?>
+    <div class="row">
+
+        <div class="col-md-12 border footer">
+            Designed by <mark>Nirdesh Kulhar</mark> (2016)
+
+
+        </div>
+
 </body>
 </html>
