@@ -70,34 +70,6 @@ and open the template in the editor.
 
             </div>
         </div>
-<div class="row">
-    <div class="col-md-12 min-height">
-
-        <div class="navbar">
-            <div class="row">
-                <div class="col-md-12"><h5><a href="blog.php">All Blog Items</a></h5></div>
-
-            </div>
-            <div class="row">
-                <div class="col-md-12"><h5><a href="blog.php">work Items</a></h5></div>
-
-            </div>
-            <div class="row">
-                <div class="col-md-12"><h5><a href="blog.php">University Items</a></h5></div>
-
-            </div>
-            <div class="row">
-                <div class="col-md-12"><h5><a href="blog.php">Family items</a></h5></div>
-
-            </div>
-            <div class="row">
-                <div class="col-md-12"><h5><a href="add.php">Insert a Blog Item</a></h5></div>
-
-            </div>
-
-
-        </div>
-    </div>
 
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
