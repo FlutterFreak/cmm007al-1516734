@@ -92,5 +92,12 @@ and open the template in the editor.
     </div>
 
 </main>
+<div class="row">
+
+    <div class="col-md-12 border footer">
+        Designed by <mark>Nirdesh Kulhar</mark> (2016)
+
+
+    </div>
 </body>
 </html>
