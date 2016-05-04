@@ -29,4 +29,6 @@ article{
     float: right;
     width: 33%;
 }
-
+footer{
+    border-bottom: solid;
+}
