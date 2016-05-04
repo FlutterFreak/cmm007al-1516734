@@ -127,11 +127,12 @@ if(isset($_POST['save_blog']))
         echo "Error:" . $sql . "<br>" . mysqli_error($db);
     }
     $message = "<h3>Data saved successfully</h3>";
+    header("location: blog.php");
 
 }
 }
 else {
-// this is impossible
+    header("location: index.php");
 }
 ?>
     <div class="row">
