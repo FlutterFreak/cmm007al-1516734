@@ -5,6 +5,6 @@ ul {
     padding: 0;
 }
 li a {
-    display: block;
+    display: inline;
     width: 60px;
 }
