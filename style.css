@@ -8,3 +8,7 @@ li a {
     display: inline;
     width: 60px;
 }
+.article{
+    float: left;
+    width: 60px;
+}
