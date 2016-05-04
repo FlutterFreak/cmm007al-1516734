@@ -16,53 +16,53 @@ and open the template in the editor.
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <title>BugTracker</title>
 </head>
-<body>
+<>
 
-<div class="container border">
+< class="container border">
 
-    <header>
-
-
-        <div class="row border">
+<header>
 
 
+    <div class="row border">
 
 
 
-            <div class="col-md-12">
 
-                <h2>myBlog</h2>
-                <h3>because the internet needs to know what I think</h3>
-            </div>
 
+        <div class="col-md-12">
+
+            <h2>myBlog</h2>
+            <h3>because the internet needs to know what I think</h3>
         </div>
 
+    </div>
 
 
-    </header>
 
+</header>
+<main>
     <div class="row">
         <div class="col-md-12 min-height">
 
             <div class="navbar">
                 <div class="row">
-                    <div class="col-md-12"><h5><a href="blog.html">All Blog Items</a></h5></div>
+                    <div class="col-md-12"><h5><a href="blog.php">All Blog Items</a></h5></div>
 
                 </div>
                 <div class="row">
-                    <div class="col-md-12"><h5><a href="blog.html">work Items</a></h5></div>
+                    <div class="col-md-12"><h5><a href="blog.php?category=work">work Items</a></h5></div>
 
                 </div>
                 <div class="row">
-                    <div class="col-md-12"><h5><a href="blog.html">University Items</a></h5></div>
+                    <div class="col-md-12"><h5><a href="blog.php?category=university">University Items</a></h5></div>
 
                 </div>
                 <div class="row">
-                    <div class="col-md-12"><h5><a href="blog.html">Family items</a></h5></div>
+                    <div class="col-md-12"><h5><a href="blog.php?category=family">Family items</a></h5></div>
 
                 </div>
                 <div class="row">
-                    <div class="col-md-12"><h5><a href="add.html">Insert a Blog Item</a></h5></div>
+                    <div class="col-md-12"><h5><a href="add.php?">Insert a Blog Item</a></h5></div>
 
                 </div>
 
@@ -70,12 +70,27 @@ and open the template in the editor.
             </div>
         </div>
     </div>
-</div>
+    <div class = "row margin-top">
+        <div class="col-md-6">
+            <input value="<?php echo $blog['entryTitle'] by $blogview['submitter']  ; ?>" class="form-control">
+        </div>
+
+    </div>
+
+    <div class = "row margin-top">
+        <div class="col-md-6">
+            <input value="<?php echo $blog['Category']; ?>" class="form-control">
+        </div>
+
+    </div>
+
+    <div class = "row margin-top">
+        <div class="col-md-9">
+            <textarea class="form-control"> <?php echo $blog['entrySummary']; ?> </textarea>
+        </div>
+
+    </div>
+
+</main>
 </body>
-</html><?php
-/**
- * Created by PhpStorm.
- * User: 1516734
- * Date: 04/05/2016
- * Time: 12:45
- */
+</html>
