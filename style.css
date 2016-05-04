@@ -10,7 +10,7 @@ nav>ul{
     padding: 0;
     overflow: hidden;
 }
-nav>li>{
+nav>ul>li> {
     float:left;
 }
 nav>ul>li a {
