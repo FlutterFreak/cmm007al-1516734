@@ -69,6 +69,9 @@
             }
             header("location:diary.php");
         }
+        else{
+            header("location:index.php");
+        }
 ?>
 
 }
