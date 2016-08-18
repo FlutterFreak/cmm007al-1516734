@@ -21,6 +21,7 @@ div.head {
 }
 
 nav {
+    clear:left;
     float: left;
     max-width: 160px;
     margin-left:0px;
