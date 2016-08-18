@@ -30,18 +30,20 @@
 
     <article>
         <div>
-            <form action="action_page.php">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname">
+            <form action="" >
+                <label >Entry Title</label>
+                <input type="text"  name="entryTitle">
 
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname">
+                <label >Entry Summary</label>
+                <textarea name="entrySummary" rows="10" cols="30">
+</textarea>
+                <input type="text" id="lname" name="entrySummary">
 
                 <label for="country">State</label>
                 <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
+                    <option value="Work">Work Items</option>
+                    <option value="University">University  Items</option>
+                    <option value="Family">Family Items</option>
                 </select>
 
                 <input type="submit" value="Submit">
