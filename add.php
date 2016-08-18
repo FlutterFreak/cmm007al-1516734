@@ -30,7 +30,8 @@
 
     <article>
         <?php
-        if ($_SERVER['REQUEST_METHOD'] === 'GET') { ?>
+        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+            ?>
             <div class="form">
                 <form action="">
                     <label>Entry Title</label>
@@ -67,7 +68,7 @@
                 echo "Error:" . $sql . "<br>" . msqli_error($db);
             }
             header("location:diary.php");
-        }
+
 ?>
 
 }
