@@ -1,3 +1,13 @@
+
+<?php
+include("db_connect.php");
+$category=$_get('Catogery')
+if(isset($_GET['Category'])) {
+    $test = $_GET['something'];
+
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,11 +29,11 @@
 
     <nav>
         <ul>
-            <li><a href="diary.html">All Diary Items</a></li>
-            <li><a href="diary.html">Work Diary Items</a></li>
-            <li><a href="diary.html">Unuversity Diary Items</a></li>
-            <li><a href="diary.html">Family Diary Items</a></li>
-            <li><a href="add.html">Insert Diary Items</a></li>
+            <li><a href="diary.php">All Diary Items</a></li>
+            <li><a href="diary.php?Catogery=Work">Work Diary Items</a></li>
+            <li><a href="diary.php?category=University">Unuversity Diary Items</a></li>
+            <li><a href="diary.php?Category=Family">Family Diary Items</a></li>
+            <li><a href="add.php">Insert Diary Items</a></li>
 
         </ul>
     </nav>

@@ -20,11 +20,10 @@
     <nav>
         <ul>
             <li><a href="diary.php">All Diary Items</a></li>
-            <li><a href="diary.php">Work Diary Items</a></li>
-            <li><a href="diary.php">Unuversity Diary Items</a></li>
-            <li><a href="diary.php">Family Diary Items</a></li>
+            <li><a href="diary.php?Catogery=Work">Work Diary Items</a></li>
+            <li><a href="diary.php?category=University">Unuversity Diary Items</a></li>
+            <li><a href="diary.php?Category=Family">Family Diary Items</a></li>
             <li><a href="add.php">Insert Diary Items</a></li>
-
         </ul>
     </nav>
 
