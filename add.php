@@ -55,7 +55,7 @@
             <?php
         }
 
-        elseif ($_SERVER['REQUEST_METHOD'] === 'POST'){
+        elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
             include("db_connect.php");
 
             $entrytitle = $_POST['entryTitle'];
@@ -68,7 +68,7 @@
                 echo "Error:" . $sql . "<br>" . msqli_error($db);
             }
             header("location:diary.php");
-
+        }
 ?>
 
 }
