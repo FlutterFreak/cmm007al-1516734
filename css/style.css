@@ -35,7 +35,9 @@ nav ul {
 nav ul a {
     text-decoration: none;
 }
-
+nav ul li a{
+    display:block;
+}
 article {
     margin-left: 170px;
     border-left: 1px solid gray;
