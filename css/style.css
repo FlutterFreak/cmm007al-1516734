@@ -25,6 +25,7 @@ nav {
     max-width: 160px;
     margin-left:10px;
     padding: 1em;
+    border: 1px solid gray;
 }
 
 nav ul {
@@ -44,7 +45,7 @@ nav ul li a{
 }
 article {
     margin-left: 170px;
-    border-left: 1px solid gray;
+
     padding: 1em;
     overflow: hidden;
 }
