@@ -38,11 +38,11 @@
             $entrytitle = $row['entryTitle'];
             $entrysummary = $row['entrySummary'];
             $category = $row['Category'];
-            echo "<article><pre>
-                  <h3>{$entrytitle}</h3><br>
-                  <h3>{$category}</h3><br>
+            echo "<article>
+                  <h3>{$entrytitle}</h3>
+                  <h3>{$category}</h3>
                   <p>{$entrysummary}</p><br><br>
-                  </pre>
+
                   </article>";
 
         }
