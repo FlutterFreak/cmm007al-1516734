@@ -31,27 +31,29 @@
     <article>
         <?php
         if ($_SERVER['REQUEST_METHOD'] === 'GET') { ?>
-        <div class="form">
-            <form action="" >
-                <label >Entry Title</label>
-                <input type="text"  name="entryTitle" >
+            <div class="form">
+                <form action="">
+                    <label>Entry Title</label>
+                    <input type="text" name="entryTitle">
 
-                <label >Entry Summary</label>
-                <textarea name="entrySummary" rows="5" cols="70" required="true"></textarea>
+                    <label>Entry Summary</label>
+                    <textarea name="entrySummary" rows="5" cols="70" required="true"></textarea>
 
 
-                <label >Category</label>
-                <select name="category" value="" required="true">
-                    <option value="Work">Work Items</option>
-                    <option value="University">University  Items</option>
-                    <option value="Family">Family Items</option>
-                </select>
+                    <label>Category</label>
+                    <select name="category" value="" required="true">
+                        <option value="Work">Work Items</option>
+                        <option value="University">University Items</option>
+                        <option value="Family">Family Items</option>
+                    </select>
 
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <?php
         }
-        <?php
+
         elseif ($_SERVER['REQUEST_METHOD'] === 'POST'){
             include("db_connect.php");
 
