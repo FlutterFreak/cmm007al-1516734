@@ -39,9 +39,9 @@
             $entrysummary = $row['entrySummary'];
             $category = $row['Category'];
             echo "<article>
-                  <h3>{$entrytitle}</h3><br><br>
-                  <h3>{$category}</h3><br><br>
-                  <p>{$entrysummary}</p>
+                  <h3>{$entrytitle}</h3><br>
+                  <h3>{$category}</h3><br>
+                  <p>{$entrysummary}</p><br><br>
                   </article>";
 
         }
