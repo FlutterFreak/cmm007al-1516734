@@ -1,7 +1,56 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: 1516734
- * Date: 18/08/2016
- * Time: 11:04
- */
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title> My Diary </title>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <img src="image/blog.png" alt="logo" width="140px">
+        <div class="head">
+            <h1> myDiary</h1>
+            <h3> Keeping track of all my thoughts</h3>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="diary.html">All Diary Items</a></li>
+            <li><a href="diary.html">Work Diary Items</a></li>
+            <li><a href="diary.html">Unuversity Diary Items</a></li>
+            <li><a href="diary.html">Family Diary Items</a></li>
+            <li><a href="add.html">Insert Diary Items</a></li>
+
+        </ul>
+    </nav>
+
+    <article>
+        <?
+        include("db_connect.php");
+        $sql_query = "SELECT * FROM diaryTable";
+        $result = $db->query($sql_query);
+        while($row = $result->fetch_array())
+        {
+            $entrytitle = $row['entryTitle'];
+            $entrysummary = $row['entrySummary'];
+            $category = $row['Category'];
+            echo "<article>
+                  <h3>{$entrytitle}</h3><br><br>
+                  <h3>{$category}</h3><br><br>
+                  <p>{$entrysummary}</p>
+                  </article>";
+
+        }
+        ?>
+    </article>
+
+    <footer> Designed by Nirdesh Kulhar 2016 </footer>
+
+</div>
+
+</body>
+</html>
