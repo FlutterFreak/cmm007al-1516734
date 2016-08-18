@@ -13,6 +13,11 @@ header, footer {
 }
 img {
     float: left;
+    padding:15px;
+    margin:10px;
+}
+div.head {
+    text-align: left;
 }
 
 nav {
