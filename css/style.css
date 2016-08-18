@@ -23,7 +23,7 @@ div.head {
 nav {
     float: left;
     max-width: 160px;
-    margin-left:10px;
+    margin-left:0px;
     padding: 1em;
     border: 1px solid gray;
 }
