@@ -11,6 +11,9 @@ header, footer {
     clear: left;
     text-align: center;
 }
+img {
+    float: left;
+}
 
 nav {
     float: left;
